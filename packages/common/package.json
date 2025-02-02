@@ -1,5 +1,5 @@
 {
-  "name": "@instagram/common",
+  "name": "@instagram/sdk",
   "version": "0.0.1",
   "description": "Instagram Functions",
   "main": "./lib/index.js",

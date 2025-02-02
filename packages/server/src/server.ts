@@ -1,4 +1,4 @@
-import { getImages } from '@instagram/common';
+import { getImages } from '@instagram/sdk';
 import { createServer } from 'node:http';
 
 const server = createServer((request, response) => {

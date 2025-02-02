@@ -1,4 +1,4 @@
-import { download } from '@instagram/common';
+import { download } from '@instagram/sdk';
 import { Command } from '@oclif/core';
 
 export default class Download extends Command {

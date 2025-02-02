@@ -17,7 +17,7 @@ importers:
 
   packages/cli:
     dependencies:
-      '@instagram/common':
+      '@instagram/sdk':
         specifier: workspace:0.0.1
         version: link:../common
       '@oclif/core':
@@ -106,7 +106,7 @@ importers:
 
   packages/server:
     dependencies:
-      '@instagram/common':
+      '@instagram/sdk':
         specifier: workspace:0.0.1
         version: link:../common
     devDependencies:
