@@ -1,5 +1,6 @@
 .turbo
 bin
 dist
+lib
 node_modules
 temp

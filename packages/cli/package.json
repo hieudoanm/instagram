@@ -16,6 +16,7 @@
     "download": "rimraf temp && mkdir temp && pnpm ts-node ./src/main.ts"
   },
   "dependencies": {
+    "@instagram/common": "workspace:0.0.1",
     "@oclif/core": "4.2.5",
     "figlet": "1.8.0",
     "puppeteer": "24.1.1"

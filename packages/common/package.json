@@ -1,0 +1,35 @@
+{
+  "name": "@instagram/common",
+  "version": "0.0.1",
+  "description": "Instagram Functions",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --fix .",
+    "format": "prettier --cache --write .",
+    "build": "rimraf lib && tsc"
+  },
+  "dependencies": {
+    "figlet": "1.8.0",
+    "puppeteer": "24.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.19.0",
+    "@types/figlet": "1.7.0",
+    "@types/node": "22.13.0",
+    "eslint": "9.19.0",
+    "globals": "15.14.0",
+    "prettier": "3.4.2",
+    "rimraf": "6.0.1",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.22.0"
+  },
+  "keywords": [
+    "instagram",
+    "common"
+  ]
+}
