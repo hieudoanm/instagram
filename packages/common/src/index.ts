@@ -1,7 +1,7 @@
 import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import readline from 'node:readline';
 import figlet from 'figlet';
-import puppeteer from 'puppeteer';
+import puppeteer, { Browser } from 'puppeteer';
 
 const addZero = (i: number): string => (i > 9 ? `${i}` : `0${i}`);
 
@@ -43,11 +43,9 @@ const createFolder = (folderPath: string) => {
   console.info('Folder created again!');
 };
 
-export const download = async () => {
-  // Input
-  figlet('Instagram CLI');
-  const instagramURL: string = await readlineSync('Instagram URL');
-  const instagramFolder: string = await readlineSync('Instagram Folder');
+export const getImages = async (
+  instagramURL: string
+): Promise<{ browser: Browser; images: string[] }> => {
   // Open Page
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
@@ -67,18 +65,30 @@ export const download = async () => {
   }
   console.info('Done checking if button exists');
   // Get all Images
-  const data = await page.evaluate(() => {
+  const images = await page.evaluate(() => {
     const imageElements: NodeListOf<HTMLImageElement> =
       document.querySelectorAll('.Content.EmbedFrame img');
     const images: string[] = [];
     for (const imageElement of imageElements) {
       images.push(imageElement.src);
     }
-    return { images };
+    console.log();
+    return images;
   });
+  console.info('images');
+  return { browser, images };
+};
+
+export const download = async () => {
+  // Input
+  figlet('Instagram CLI');
+  const instagramURL: string = await readlineSync('Instagram URL');
+  const instagramFolder: string = await readlineSync('Instagram Folder');
+
   // Download
   createFolder(instagramFolder);
-  const { images = [] } = data;
+  const data = await getImages(instagramURL);
+  const { browser, images = [] } = data;
   console.log(images);
   for (let i = 0; i < images.length; i++) {
     const image: string = images[i];

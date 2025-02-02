@@ -1,0 +1,7 @@
+## Download Images from Instagram Post URL
+POST http://localhost:8080/download
+Content-Type: application/json
+
+{
+  "url": "https://www.instagram.com/p/DFijU7Gzkae/?utm_source=ig_web_copy_link"
+}
