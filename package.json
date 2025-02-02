@@ -1,0 +1,20 @@
+{
+  "name": "@instagram/app",
+  "version": "0.0.1",
+  "description": "Instagram App",
+  "main": "./src/main.ts",
+  "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
+  "license": "GPL-3.0",
+  "packageManager":"pnpm@9.15.4",
+  "private": true,
+  "scripts": {   
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "prepare": "husky || true"
+  },
+  "devDependencies": {
+    "husky": "9.1.7",
+    "turbo": "2.4.0"
+  }
+}
