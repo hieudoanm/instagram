@@ -79,11 +79,23 @@ export const getImages = async (
   return { browser, images };
 };
 
+export const validate = (url: string): boolean => {
+  const pattern: RegExp =
+    /^(?:https?:\/\/)?(?:www\.)?instagram\.com\/p\/[a-zA-Z0-9_-]+\/?$/;
+  return pattern.test(url);
+};
+
 export const download = async () => {
   // Input
   figlet('Instagram CLI');
   const instagramURL: string = await readlineSync('Instagram URL');
   const instagramFolder: string = await readlineSync('Instagram Folder');
+
+  const validated = validate(instagramURL);
+
+  if (!validated) {
+    throw new Error('Invalid URL');
+  }
 
   // Download
   createFolder(instagramFolder);
