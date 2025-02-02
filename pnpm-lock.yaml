@@ -21,8 +21,8 @@ importers:
         specifier: workspace:0.0.1
         version: link:../common
       '@oclif/core':
-        specifier: 4.2.5
-        version: 4.2.5
+        specifier: 4.2.6
+        version: 4.2.6
       figlet:
         specifier: 1.8.0
         version: 1.8.0
@@ -748,8 +748,8 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@oclif/core@4.2.5':
-    resolution: {integrity: sha512-bdXOojq8GaPnWnDgVOw030JlUROJEiDLXiV3XUUGUQDEp6YpVQvEYLIrUsEvyfASU3z3FGg3DC9k0kprcOYdhw==}
+  '@oclif/core@4.2.6':
+    resolution: {integrity: sha512-agk1Tlm7qMemWx+qq5aNgkYwX2JCkoVP4M0ruFveJrarmdUPbKZTMW1j/eg8lNKZh1sp68ytZyKhYXYEfRPcww==}
     engines: {node: '>=18.0.0'}
 
   '@oclif/plugin-help@6.2.23':
@@ -4105,7 +4105,7 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.0
 
-  '@oclif/core@4.2.5':
+  '@oclif/core@4.2.6':
     dependencies:
       ansi-escapes: 4.3.2
       ansis: 3.10.0
@@ -4128,12 +4128,12 @@ snapshots:
 
   '@oclif/plugin-help@6.2.23':
     dependencies:
-      '@oclif/core': 4.2.5
+      '@oclif/core': 4.2.6
 
   '@oclif/plugin-not-found@3.2.39(@types/node@22.13.0)':
     dependencies:
       '@inquirer/prompts': 7.2.4(@types/node@22.13.0)
-      '@oclif/core': 4.2.5
+      '@oclif/core': 4.2.6
       ansis: 3.10.0
       fast-levenshtein: 3.0.0
     transitivePeerDependencies:
@@ -4141,7 +4141,7 @@ snapshots:
 
   '@oclif/plugin-warn-if-update-available@3.1.31':
     dependencies:
-      '@oclif/core': 4.2.5
+      '@oclif/core': 4.2.6
       ansis: 3.10.0
       debug: 4.4.0
       http-call: 5.3.0
@@ -6075,7 +6075,7 @@ snapshots:
       '@inquirer/confirm': 3.2.0
       '@inquirer/input': 2.3.0
       '@inquirer/select': 2.5.0
-      '@oclif/core': 4.2.5
+      '@oclif/core': 4.2.6
       '@oclif/plugin-help': 6.2.23
       '@oclif/plugin-not-found': 3.2.39(@types/node@22.13.0)
       '@oclif/plugin-warn-if-update-available': 3.1.31
