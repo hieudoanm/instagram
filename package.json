@@ -5,9 +5,9 @@
   "main": "./src/main.ts",
   "author": "hieudoanm <hieumdoan@gmail.com> (https://hieudoanm.github.io)",
   "license": "GPL-3.0",
-  "packageManager":"pnpm@9.15.5",
+  "packageManager": "pnpm@9.15.5",
   "private": true,
-  "scripts": {   
+  "scripts": {
     "format": "turbo run format",
     "lint": "turbo run lint",
     "build": "turbo run build",
