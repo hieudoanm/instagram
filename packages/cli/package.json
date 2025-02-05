@@ -19,7 +19,7 @@
     "@instagram/sdk": "workspace:0.0.1",
     "@oclif/core": "4.2.6",
     "figlet": "1.8.0",
-    "puppeteer": "24.1.1"
+    "puppeteer": "24.2.0"
   },
   "devDependencies": {
     "@eslint/js": "9.19.0",
