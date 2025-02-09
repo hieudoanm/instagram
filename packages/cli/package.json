@@ -27,7 +27,7 @@
     "@types/node": "22.13.1",
     "eslint": "9.20.0",
     "globals": "15.14.0",
-    "oclif": "4.17.25",
+    "oclif": "4.17.26",
     "prettier": "3.4.2",
     "rimraf": "6.0.1",
     "ts-node": "10.9.2",
