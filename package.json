@@ -8,9 +8,10 @@
   "packageManager": "pnpm@10.2.1",
   "private": true,
   "scripts": {
-    "format": "turbo run format",
+    "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "build": "turbo run build",
+    "build": "turbo run build && touch ./docs/.nojekyll",
+    "format": "turbo run format",
     "prepare": "husky || true"
   },
   "devDependencies": {
